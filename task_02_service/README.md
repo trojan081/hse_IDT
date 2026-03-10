@@ -24,12 +24,18 @@
 - Statistics and graphs are displayed automatically when data is available
 
 ============ DEPLOY TO RENDER ============
+============ DEPLOY TO RENDER ============
 
-Service ID: srv-d6o613h5pdvs739smjig   
-https://task-02-service.onrender.com  
+BACKEND:   
+https://task-02-service.onrender.com    
   
-repository: https://github.com/trojan081/hse_IDT  
-Language: python 3  
-Branch: task_02  
-Build command: pip install -r requirements.txt  
-Start command: uvicorn backend.main:app --host 0.0.0.0 --port 10000
+FRONTEND:  
+https://task-02-webservice.onrender.com/  
+  
+Backend Render:  
+- Build command: pip install -r requirements.txt    
+- Start command: cd task_02_service && uvicorn backend.main:app --host 0.0.0.0 --port 10000  
+  
+Frontend Render:  
+- Build command: pip install -r requirements.txt    
+- Start command: cd task_02_service && streamlit run frontend/app.py --server.port 10000 --server.address 0.0.0.0  
