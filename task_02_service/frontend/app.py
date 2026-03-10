@@ -3,8 +3,9 @@ import pandas as pd
 import requests
 import plotly.express as px
 from datetime import datetime
+import os
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = os.getenv("API_URL", "http://localhost:10000")
 
 # Get the data
 @st.cache_data

@@ -32,4 +32,4 @@ repository: https://github.com/trojan081/hse_IDT
 Language: python 3  
 Branch: task_02  
 Build command: pip install -r requirements.txt  
-Start command: uvicorn main:app --host 0.0.0.0 --port 10000
+Start command: uvicorn backend.main:app --host 0.0.0.0 --port 10000
