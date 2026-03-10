@@ -24,7 +24,6 @@
 - Statistics and graphs are displayed automatically when data is available
 
 ============ DEPLOY TO RENDER ============
-============ DEPLOY TO RENDER ============
 
 BACKEND:   
 https://task-02-service.onrender.com    
