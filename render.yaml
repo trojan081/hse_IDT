@@ -3,6 +3,5 @@ services:
     name: hse-idt-backend
     runtime: python
     pythonVersion: 3.12
-    rootDir: task_02_service
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn backend.main:app --host 0.0.0.0
+    buildCommand: pip install -r task_02_service/requirements.txt
+    startCommand: cd task_02_service && uvicorn main:app --host 0.0.0.0
