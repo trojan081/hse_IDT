@@ -13,7 +13,7 @@
 
 ============ USAGE ============
 
-- Upload CSV file using "Upload .csv file" form
+- Upload CSV file using "Upload .csv file" form  
    1) File must contain columns: timestep, consumption_eur, consumption_sib, price_eur, price_sib
    2) ID is generated automatically
 
@@ -25,8 +25,9 @@
 
 ============ DEPLOY TO RENDER ============
 
-Service ID: srv-d6o613h5pdvs739smjig https://task-02-service.onrender.com
-
+Service ID: srv-d6o613h5pdvs739smjig   
+https://task-02-service.onrender.com  
+  
 repository: https://github.com/trojan081/hse_IDT  
 Language: python 3  
 Branch: task_02  
