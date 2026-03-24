@@ -1,16 +1,16 @@
 ============ PROJECT STRUCTURE ============
-
-task_03_service/
-├── docker-compose.yml
-├── requirements.txt
-├── backend/
-│   ├── Dockerfile
-│   ├── main.py
-│   └── data.csv
-└── frontend/
-    ├── Dockerfile
-    └── app.py
-
+  
+task_03_service/  
+├── docker-compose.yml  
+├── requirements.txt  
+├── backend/  
+│   ├── Dockerfile  
+│   ├── main.py  
+│   └── data.csv  
+└── frontend/  
+    ├── Dockerfile  
+    └── app.py  
+  
 ============ DOCKER RUN ============
 
 - Install Docker Engine to PC by downloading from official website: https://docs.docker.com/engine/install/
