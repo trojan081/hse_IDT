@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./backend/data.csv:/app/data.csv
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "8889:8889"
+    environment:
+      - API_URL=http://backend:8888
+    depends_on:
+      - backend
