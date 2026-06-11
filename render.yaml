@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: hse-idt-backend
+    runtime: python
+    pythonVersion: 3.12
+    buildCommand: pip install -r task_02_service/requirements.txt
+    startCommand: cd task_02_service && uvicorn backend.main:app --host 0.0.0.0 --port 10000
+
+  - type: web
+    name: hse-idt-frontend
+    runtime: python
+    pythonVersion: 3.12
+    buildCommand: pip install -r task_02_service/requirements.txt
+    startCommand: cd task_02_service && streamlit run frontend/app.py --server.port 10000 --server.address 0.0.0.0
+    envVars:
+      - key: API_URL
+        value: https://hse-idt-backend.onrender.com
